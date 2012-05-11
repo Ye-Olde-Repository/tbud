@@ -1,0 +1,6 @@
+                  ---  Alpha Central Test Server ---
+Welcome all to TBUD's central testing server.
+Be warned, this server is often down for modification. Users will be
+notified when server is online.
+Thanks,
+   Roy.

@@ -1,0 +1,8 @@
+Entity ID Description
+
+	Every entity has an id of type unsigned. The id is used for identification
+	purposes (obviously) in such actions as searches. Any valid unsigned integer
+	may be dynamically assigned to an Entity except for the following:
+		0 - Null Entity (undefined)
+		1 - Default/Master Room (ENT_HOME)
+		2 - The root-type user, God. Complete admin power. (ENT_GOD)

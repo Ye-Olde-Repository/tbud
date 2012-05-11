@@ -1,0 +1,47 @@
+# Project: TBUD
+# Makefile created by Dev-C++ 4.9.8.0
+
+CPP  = g++.exe -D__DEBUG__
+CC   = gcc.exe -D__DEBUG__
+WINDRES = windres.exe
+RES  = 
+OBJ  = account.o database.o entity.o globals.o main.o network.o utility.o $(RES)
+LINKOBJ  = account.o database.o entity.o globals.o main.o network.o utility.o $(RES)
+LIBS =  -L"C:/Dev-Cpp/lib" -lwsock32 
+INCS =  -I"C:/Dev-Cpp/include" 
+CXXINCS =  -I"C:/Dev-Cpp/include/c++"  -I"C:/Dev-Cpp/include/c++/mingw32"  -I"C:/Dev-Cpp/include/c++/backward"  -I"C:/Dev-Cpp/include" 
+BIN  = TBUD.exe
+CXXFLAGS = $(CXXINCS)-Wno-deprecated -w   -g3
+CFLAGS = $(INCS)  -g3
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before TBUD.exe all-after
+
+
+clean: clean-custom
+	rm -f $(OBJ) $(BIN)
+
+$(BIN): $(LINKOBJ)
+	$(CPP) $(LINKOBJ) -o "TBUD.exe" $(LIBS)
+
+account.o: account.cpp
+	$(CPP) -c account.cpp -o account.o $(CXXFLAGS)
+
+database.o: database.cpp
+	$(CPP) -c database.cpp -o database.o $(CXXFLAGS)
+
+entity.o: entity.cpp
+	$(CPP) -c entity.cpp -o entity.o $(CXXFLAGS)
+
+globals.o: globals.cpp
+	$(CPP) -c globals.cpp -o globals.o $(CXXFLAGS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+network.o: network.cpp
+	$(CPP) -c network.cpp -o network.o $(CXXFLAGS)
+
+utility.o: utility.cpp
+	$(CPP) -c utility.cpp -o utility.o $(CXXFLAGS)

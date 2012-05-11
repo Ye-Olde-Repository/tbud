@@ -1,0 +1,17 @@
+                      --- Message of the Day ---
+                           -- 30 Jan 04 --
+                                                   
+Today's accomplishments:
+  * TBUD loads and links correctly.
+  * Destroying areas dumps inventory into Master Room.
+Bugs:
+  * logins aren't saved upon creation.
+  * "@set" doesn't require quotations around some parameters.
+  * No notification for certain op commands.
+  * No keyword parsing.
+Todo:
+  * Create IRC interface.
+  * Switch database to MySQL.
+  * Implement a XML parsing language for building.
+	-- Kylratix (Roy Laurie)
+------------------------------------------------------------------------
